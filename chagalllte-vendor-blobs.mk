@@ -12,121 +12,28 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-#Common
-PRODUCT_COPY_FILES += \
-    vendor/samsung/chagalllte/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so
-
 #RIL
 #libGLES_trace.so needed as else protobuf error
 PRODUCT_COPY_FILES += \
     vendor/samsung/chagalllte/proprietary/sbin/cbd:root/sbin/cbd \
-    vendor/samsung/chagalllte/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
-    vendor/samsung/chagalllte/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
-    vendor/samsung/chagalllte/proprietary/lib/libGLES_trace.so:system/lib/libGLES_trace.so
-
-#Mobicore
-#Binary file DBT-T805XXU1BOJ1-20151021113233/system/bin/mcDriverDaemon matches
-#Binary file DBT-T805XXU1BOJ1-20151021113233/system/lib/libcommonpawrapper.so matches
-#Binary file DBT-T805XXU1BOJ1-20151021113233/system/lib/libMcRegistry.so matches
-#Binary file DBT-T805XXU1BOJ1-20151021113233/system/lib/libseckeyprov.so matches
-PRODUCT_COPY_FILES += \
-    vendor/samsung/chagalllte/proprietary/app/FFFFFFFF000000000000000000000001.drbin:system/app/FFFFFFFF000000000000000000000001.drbin \
-    vendor/samsung/chagalllte/proprietary/app/mcRegistry/00060308060501020000000000000000.tlbin:system/app/mcRegistry/00060308060501020000000000000000.tlbin \
-    vendor/samsung/chagalllte/proprietary/app/mcRegistry/02010000080300030000000000000000.tlbin:system/app/mcRegistry/02010000080300030000000000000000.tlbin \
-    vendor/samsung/chagalllte/proprietary/app/mcRegistry/07010000000000000000000000000000.tlbin:system/app/mcRegistry/07010000000000000000000000000000.tlbin \
-    vendor/samsung/chagalllte/proprietary/app/mcRegistry/07060000000000000000000000000000.tlbin:system/app/mcRegistry/07060000000000000000000000000000.tlbin \
-    vendor/samsung/chagalllte/proprietary/app/mcRegistry/ffffffff000000000000000000000003.tlbin:system/app/mcRegistry/ffffffff000000000000000000000003.tlbin \
-    vendor/samsung/chagalllte/proprietary/app/mcRegistry/ffffffff000000000000000000000004.tlbin:system/app/mcRegistry/ffffffff000000000000000000000004.tlbin \
-    vendor/samsung/chagalllte/proprietary/app/mcRegistry/ffffffff000000000000000000000005.tlbin:system/app/mcRegistry/ffffffff000000000000000000000005.tlbin \
-    vendor/samsung/chagalllte/proprietary/app/mcRegistry/ffffffff000000000000000000000007.tlbin:system/app/mcRegistry/ffffffff000000000000000000000007.tlbin \
-    vendor/samsung/chagalllte/proprietary/app/mcRegistry/ffffffff000000000000000000000008.tlbin:system/app/mcRegistry/ffffffff000000000000000000000008.tlbin \
-    vendor/samsung/chagalllte/proprietary/app/mcRegistry/ffffffff000000000000000000000009.tlbin:system/app/mcRegistry/ffffffff000000000000000000000009.tlbin \
-    vendor/samsung/chagalllte/proprietary/app/mcRegistry/ffffffff00000000000000000000000a.tlbin:system/app/mcRegistry/ffffffff00000000000000000000000a.tlbin \
-    vendor/samsung/chagalllte/proprietary/app/mcRegistry/ffffffff00000000000000000000000c.tlbin:system/app/mcRegistry/ffffffff00000000000000000000000c.tlbin \
-    vendor/samsung/chagalllte/proprietary/app/mcRegistry/ffffffff00000000000000000000000d.tlbin:system/app/mcRegistry/ffffffff00000000000000000000000d.tlbin \
-    vendor/samsung/chagalllte/proprietary/app/mcRegistry/ffffffff00000000000000000000000e.tlbin:system/app/mcRegistry/ffffffff00000000000000000000000e.tlbin \
-    vendor/samsung/chagalllte/proprietary/app/mcRegistry/ffffffff00000000000000000000000f.tlbin:system/app/mcRegistry/ffffffff00000000000000000000000f.tlbin \
-    vendor/samsung/chagalllte/proprietary/app/mcRegistry/ffffffff000000000000000000000010.tlbin:system/app/mcRegistry/ffffffff000000000000000000000010.tlbin \
-    vendor/samsung/chagalllte/proprietary/app/mcRegistry/ffffffff000000000000000000000011.tlbin:system/app/mcRegistry/ffffffff000000000000000000000011.tlbin \
-    vendor/samsung/chagalllte/proprietary/app/mcRegistry/ffffffff000000000000000000000012.tlbin:system/app/mcRegistry/ffffffff000000000000000000000012.tlbin \
-    vendor/samsung/chagalllte/proprietary/app/mcRegistry/ffffffff000000000000000000000013.tlbin:system/app/mcRegistry/ffffffff000000000000000000000013.tlbin \
-    vendor/samsung/chagalllte/proprietary/app/mcRegistry/ffffffff000000000000000000000017.tlbin:system/app/mcRegistry/ffffffff000000000000000000000017.tlbin \
-    vendor/samsung/chagalllte/proprietary/app/mcRegistry/ffffffff000000000000000000000018.tlbin:system/app/mcRegistry/ffffffff000000000000000000000018.tlbin \
-    vendor/samsung/chagalllte/proprietary/app/mcRegistry/ffffffffd00000000000000000000004.tlbin:system/app/mcRegistry/ffffffffd00000000000000000000004.tlbin \
-    vendor/samsung/chagalllte/proprietary/app/mcRegistry/ffffffffd0000000000000000000000a.tlbin:system/app/mcRegistry/ffffffffd0000000000000000000000a.tlbin \
-    vendor/samsung/chagalllte/proprietary/app/mcRegistry/ffffffffd0000000000000000000000e.tlbin:system/app/mcRegistry/ffffffffd0000000000000000000000e.tlbin
-
-#service for TZPR provisioning version check app
-PRODUCT_COPY_FILES += \
-    vendor/samsung/chagalllte/proprietary/bin/scranton_RD:system/bin/scranton_RD
+    vendor/samsung/chagalllte/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so
 
 #Bluetooth firmware
 PRODUCT_COPY_FILES += \
     vendor/samsung/chagalllte/proprietary/vendor/firmware/bcm4350_V0301.0591.hcd:system/vendor/firmware/bcm4350_V0301.0591.hcd
 
-#WiFi - Config TODO: Move to device
-PRODUCT_COPY_FILES_NN += \
-    vendor/samsung/chagalllte/proprietary/etc/wifi/p2p_supplicant_overlay.conf:system/etc/wifi/p2p_supplicant_overlay.conf \
-    vendor/samsung/chagalllte/proprietary/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
-    vendor/samsung/chagalllte/proprietary/etc/wifi/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf
-
 #WiFi - Firmware
 PRODUCT_COPY_FILES += \
-    vendor/samsung/chagalllte/proprietary/etc/wifi/bcmdhd_apsta.bin:system/etc/wifi/bcmdhd_apsta.bin \
-    vendor/samsung/chagalllte/proprietary/etc/wifi/bcmdhd_ibss.bin:system/etc/wifi/bcmdhd_ibss.bin \
-    vendor/samsung/chagalllte/proprietary/etc/wifi/bcmdhd_mfg.bin:system/etc/wifi/bcmdhd_mfg.bin \
-    vendor/samsung/chagalllte/proprietary/etc/wifi/bcmdhd_sta.bin:system/etc/wifi/bcmdhd_sta.bin \
-    vendor/samsung/chagalllte/proprietary/etc/wifi/cred.conf:system/etc/wifi/cred.conf \
     vendor/samsung/chagalllte/proprietary/etc/wifi/nvram_mfg.txt_4354_a0:system/etc/wifi/nvram_mfg.txt_4354_a0 \
     vendor/samsung/chagalllte/proprietary/etc/wifi/nvram_mfg.txt_4354_a1:system/etc/wifi/nvram_mfg.txt_4354_a1 \
     vendor/samsung/chagalllte/proprietary/etc/wifi/nvram_net.txt_4354_a0:system/etc/wifi/nvram_net.txt_4354_a0 \
     vendor/samsung/chagalllte/proprietary/etc/wifi/nvram_net.txt_4354_a1:system/etc/wifi/nvram_net.txt_4354_a1 \
-    vendor/samsung/chagalllte/proprietary/etc/wifi/olsrd.conf:system/etc/wifi/olsrd.conf
-
-#Camera
-PRODUCT_COPY_FILES += \
-    vendor/samsung/chagalllte/proprietary/lib/hw/camera.universal5420.so:system/lib/hw/camera.vendor.universal5420.so \
-    vendor/samsung/chagalllte/proprietary/lib/libexynoscamera.so:system/lib/libexynoscamera.so \
-    vendor/samsung/chagalllte/proprietary/lib/libvdis.so:system/lib/libvdis.so
-
-#Camera firmware
-PRODUCT_COPY_FILES += \
-    vendor/samsung/chagalllte/proprietary/vendor/firmware/fimc_is_fw2_IMX134_EEPROM.bin:system/vendor/firmware/fimc_is_fw2_IMX134_EEPROM.bin
-
-#Unused? Does not exist anymore?
-PRODUCT_COPY_FILES_NN += \
-    vendor/samsung/chagalllte/proprietary/lib/libliveframework.so:system/lib/libliveframework.so
-
-#Camera - arcsoft
-PRODUCT_COPY_FILES += \
-    vendor/samsung/chagalllte/proprietary/lib/libarcsoft_flawlessface2.so:system/lib/libarcsoft_flawlessface2.so \
-    vendor/samsung/chagalllte/proprietary/lib/libarcsoft_magicshot_bestface.so:system/lib/libarcsoft_magicshot_bestface.so \
-    vendor/samsung/chagalllte/proprietary/lib/libarcsoft_magicshot_bestphoto.so:system/lib/libarcsoft_magicshot_bestphoto.so \
-    vendor/samsung/chagalllte/proprietary/lib/libarcsoft_magicshot_common.so:system/lib/libarcsoft_magicshot_common.so \
-    vendor/samsung/chagalllte/proprietary/lib/libarcsoft_magicshot_drama.so:system/lib/libarcsoft_magicshot_drama.so \
-    vendor/samsung/chagalllte/proprietary/lib/libarcsoft_magicshot_eraser.so:system/lib/libarcsoft_magicshot_eraser.so \
-    vendor/samsung/chagalllte/proprietary/lib/libarcsoft_magicshot_picmotion.so:system/lib/libarcsoft_magicshot_picmotion.so \
-    vendor/samsung/chagalllte/proprietary/lib/libarcsoft_night_shot_ex.so:system/lib/libarcsoft_night_shot_ex.so \
-    vendor/samsung/chagalllte/proprietary/lib/libarcsoft_panorama_burstcapture.so:system/lib/libarcsoft_panorama_burstcapture.so \
-    vendor/samsung/chagalllte/proprietary/lib/libarcsoft_picaction.so:system/lib/libarcsoft_picaction.so \
-    vendor/samsung/chagalllte/proprietary/lib/libarcsoft_picmotion.so:system/lib/libarcsoft_picmotion.so \
-    vendor/samsung/chagalllte/proprietary/lib/libarcsoft_preprocessor.so:system/lib/libarcsoft_preprocessor.so \
-    vendor/samsung/chagalllte/proprietary/lib/libarcsoft_readengine.so:system/lib/libarcsoft_readengine.so \
-    vendor/samsung/chagalllte/proprietary/lib/libarcsoft_sensorndk.so:system/lib/libarcsoft_sensorndk.so \
-    vendor/samsung/chagalllte/proprietary/lib/libarcsoft_vdoinvideo.so:system/lib/libarcsoft_vdoinvideo.so
-
-#SRP Audio driver for Samsung Exynos firmware
-PRODUCT_COPY_FILES += \
-    vendor/samsung/chagalllte/proprietary/vendor/firmware/srp_cga.bin:system/vendor/firmware/srp_cga.bin \
-    vendor/samsung/chagalllte/proprietary/vendor/firmware/srp_data.bin:system/vendor/firmware/srp_data.bin \
-    vendor/samsung/chagalllte/proprietary/vendor/firmware/srp_vliw.bin:system/vendor/firmware/srp_vliw.bin
 
 #Sensors
 #Binary file DBT-T805XXU1BOJ1-20151021113233/system/lib/hw/sensors.universal5420.so matches
 #Binary file DBT-T805XXU1BOJ1-20151021113233/system/lib/libak09911c.so matches
 PRODUCT_COPY_FILES += \
-    vendor/samsung/chagalllte/proprietary/lib/hw/sensors.universal5420.so:system/lib/hw/sensors.universal5420.so \
-    vendor/samsung/chagalllte/proprietary/lib/libak09911c.so:system/lib/libak09911c.so
+    vendor/samsung/chagalllte/proprietary/lib/hw/sensors.universal5420.so:system/lib/hw/sensors.universal5420.so
 
 #GPS
 PRODUCT_COPY_FILES += \
@@ -136,53 +43,7 @@ PRODUCT_COPY_FILES += \
 
 #GPS - Config TODO: Move to device
 PRODUCT_COPY_FILES += \
-    vendor/samsung/chagalllte/proprietary/etc/gps.conf:system/etc/gps.conf \
     vendor/samsung/chagalllte/proprietary/etc/gps.xml:system/etc/gps.xml
-
-#OpenGL
-PRODUCT_COPY_FILES += \
-    vendor/samsung/chagalllte/proprietary/vendor/lib/egl/libGLES_mali.so:system/vendor/lib/egl/libGLES_mali.so
-
-#RS
-#Binary file DBT-T805XXU1BOJ1-20151021113233/system/lib/libRS.so matches
-PRODUCT_COPY_FILES += \
-    vendor/samsung/chagalllte/proprietary/vendor/lib/libRSDriverArm.so:system/vendor/lib/libRSDriverArm.so \
-    vendor/samsung/chagalllte/proprietary/vendor/lib/libmalicore.bc:system/vendor/lib/libmalicore.bc
-
-#IDC - Move to device
-PRODUCT_COPY_FILES += \
-    vendor/samsung/chagalllte/proprietary/usr/idc/Synaptics_HID_TouchPad.idc:system/usr/idc/Synaptics_HID_TouchPad.idc
-
-#Keylayout - Move to device
-PRODUCT_COPY_FILES += \
-    vendor/samsung/chagalllte/proprietary/usr/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl
-
-#OMX
-PRODUCT_COPY_FILES += \
-    vendor/samsung/chagalllte/proprietary/lib/omx/libOMX.Exynos.AVC.Decoder.so:system/lib/omx/libOMX.Exynos.AVC.Decoder.so \
-    vendor/samsung/chagalllte/proprietary/lib/omx/libOMX.Exynos.AVC.Encoder.so:system/lib/omx/libOMX.Exynos.AVC.Encoder.so \
-    vendor/samsung/chagalllte/proprietary/lib/omx/libOMX.Exynos.MPEG4.Decoder.so:system/lib/omx/libOMX.Exynos.MPEG4.Decoder.so \
-    vendor/samsung/chagalllte/proprietary/lib/omx/libOMX.Exynos.MPEG4.Encoder.so:system/lib/omx/libOMX.Exynos.MPEG4.Encoder.so \
-    vendor/samsung/chagalllte/proprietary/lib/omx/libOMX.Exynos.VP8.Decoder.so:system/lib/omx/libOMX.Exynos.VP8.Decoder.so \
-    vendor/samsung/chagalllte/proprietary/lib/omx/libOMX.Exynos.VP8.Encoder.so:system/lib/omx/libOMX.Exynos.VP8.Encoder.so
-
-PRODUCT_COPY_FILES_NN += \
-    vendor/samsung/chagalllte/proprietary/lib/omx/libOMX.Exynos.WMV.Decoder.so:system/lib/omx/libOMX.Exynos.WMV.Decoder.so
-
-#MediaServer
-#Binary file DBT-T805XXU1BOJ1-20151021113233/system/lib/libmediaplayerservice.so matches
-PRODUCT_COPY_FILES += \
-    vendor/samsung/chagalllte/proprietary/lib/libstagefright_hdcp.so:system/lib/libstagefright_hdcp.so
-
-#Samsung S5P Multi Format Codec V5/V6 firmware
-PRODUCT_COPY_FILES += \
-    vendor/samsung/chagalllte/proprietary/vendor/firmware/mfc_fw.bin:system/vendor/firmware/mfc_fw.bin
-
-#Samsung Exynos5 SoC series FIMC-IS driver firmware
-PRODUCT_COPY_FILES += \
-    vendor/samsung/chagalllte/proprietary/vendor/firmware/fimc_is_fw2_IMX134_EEPROM.bin:system/vendor/firmware/fimc_is_fw2_IMX134_EEPROM.bin \
-    vendor/samsung/chagalllte/proprietary/vendor/firmware/setfile_6b2_eeprom.bin:system/vendor/firmware/setfile_6b2_eeprom.bin \
-    vendor/samsung/chagalllte/proprietary/vendor/firmware/setfile_imx134_eeprom.bin:system/vendor/firmware/setfile_imx134_eeprom.bin
 
 #SSWAP - Needed?
 PRODUCT_COPY_FILES += \
@@ -190,26 +51,5 @@ PRODUCT_COPY_FILES += \
 
 #MediaDRM
 PRODUCT_COPY_FILES += \
-    vendor/samsung/chagalllte/proprietary/lib/liboemcrypto.so:system/lib/liboemcrypto.so \
-    vendor/samsung/chagalllte/proprietary/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
     vendor/samsung/chagalllte/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so
-
-#Unused?
-PRODUCT_COPY_FILES_NN += \
-    vendor/samsung/chagalllte/proprietary/vendor/lib/mediadrm/libdrmclearkeyplugin.so:system/vendor/lib/mediadrm/libdrmclearkeyplugin.so
-
-#DRMServer called through service_redefine drm
-PRODUCT_COPY_FILES += \
-    vendor/samsung/chagalllte/proprietary/bin/drmserver:system/bin/drmserver.samsung
-
-#Stagefright
-PRODUCT_COPY_FILES += \
-    vendor/samsung/chagalllte/proprietary/lib/drm/libdrmwvmplugin.so:system/lib/drm/libdrmwvmplugin.so \
-    vendor/samsung/chagalllte/proprietary/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
-    vendor/samsung/chagalllte/proprietary/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
-    vendor/samsung/chagalllte/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so
-
-#Unused
-PRODUCT_COPY_FILES_NN += \
-    vendor/samsung/chagalllte/proprietary/vendor/lib/libWVphoneAPI.so:system/vendor/lib/libWVphoneAPI.so
 
