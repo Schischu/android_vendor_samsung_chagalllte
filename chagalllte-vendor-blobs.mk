@@ -45,11 +45,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/samsung/chagalllte/proprietary/etc/gps.xml:system/etc/gps.xml
 
-#WORKAROUND: USE New libGLES_mali.so on T805!!!
-#OpenGL
-PRODUCT_COPY_FILES += \
-    vendor/samsung/chagalllte/proprietary/vendor/lib/egl/libGLES_mali.so:system/vendor/lib/egl/libGLES_mali.so
-
 #SSWAP - Needed?
 PRODUCT_COPY_FILES += \
     vendor/samsung/chagalllte/proprietary/sbin/sswap:root/sbin/sswap
