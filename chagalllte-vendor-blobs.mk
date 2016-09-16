@@ -15,7 +15,7 @@
 #RIL
 #libGLES_trace.so needed as else protobuf error
 PRODUCT_COPY_FILES += \
-    vendor/samsung/chagalllte/proprietary/sbin/cbd:root/sbin/cbd \
+    vendor/samsung/chagalllte/proprietary/sbin/cbd:system/bin/cbd \
     vendor/samsung/chagalllte/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so
 
 #Bluetooth firmware
