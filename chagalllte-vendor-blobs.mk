@@ -36,14 +36,24 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/chagalllte/proprietary/lib/hw/sensors.universal5420.so:system/lib/hw/sensors.universal5420.so
 
 #GPS
-PRODUCT_COPY_FILES += \
+PRODUCT_COPY_FILES_NN += \
     vendor/samsung/chagalllte/proprietary/bin/gpsd:system/bin/gpsd \
     vendor/samsung/chagalllte/proprietary/lib/libwrappergps.so:system/lib/libwrappergps.so \
     vendor/samsung/chagalllte/proprietary/lib/hw/gps.default.so:system/lib/hw/gps.default.so
 
+#GPS - MM STOCK
+PRODUCT_COPY_FILES += \
+    vendor/samsung/chagalllte/proprietary_mm/bin/gpsd:system/bin/gpsd \
+    vendor/samsung/chagalllte/proprietary_mm/lib/libwrappergps.so:system/lib/libwrappergps.so \
+    vendor/samsung/chagalllte/proprietary_mm/lib/hw/gps.default.so:system/lib/hw/gps.default.so
+
 #GPS - Config TODO: Move to device
 PRODUCT_COPY_FILES += \
     vendor/samsung/chagalllte/proprietary/etc/gps.xml:system/etc/gps.xml
+
+#GPS - MM STOCK - Config TODO: Move to device
+PRODUCT_COPY_FILES += \
+    vendor/samsung/chagalllte/proprietary_mm/etc/gps.xml:system/etc/gps.xml
 
 #SSWAP - Needed?
 PRODUCT_COPY_FILES += \
